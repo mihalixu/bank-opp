@@ -46,4 +46,6 @@ public:
 private:
 };
 
+std::ostream& operator<<(std::ostream& out,const Account& acc);
+
 } // bank

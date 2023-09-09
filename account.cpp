@@ -7,4 +7,12 @@ unsigned int Account::withdraw(unsigned int amount){
     return amount;
 }
 
+std::ostream& operator<<(std::ostream& out,const Account& acc){
+    out << "Owner: " << acc.owner() << '\n';
+    out << "Number: " << acc.number() << '\n';
+    out << "Balance: " << acc.balance() << '\n';
+    return out;
+}
+
+
 } // bank
